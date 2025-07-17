@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website - Trivia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Trivia: BMI Calculator</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="portfolio.html">PORTFOLIO</a> |
+        <a href="trivia.html">TRIVIA</a>
+    </nav>
+
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/js/" target="_blank">JavaScript Basics</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN JavaScript</a></li>
+            <li><a href="https://www.calculator.net/bmi-calculator.html" target="_blank">BMI Info</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h2>Check Your BMI</h2>
+        <p>Please enter your height (in cm) and weight (in kg):</p>
+        <form name="bmiForm">
+            Height: <input type="text" id="height" name="height" placeholder="e.g. 170"><br><br>
+            Weight: <input type="text" id="weight" name="weight" placeholder="e.g. 60"><br><br>
+            <input type="button" value="Calculate BMI" onclick="calculateBMI()">
+            <input type="reset" value="Clear">
+        </form>
+        <p id="result" style="margin-top: 20px;"></p>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+        <h3>Contact Me</h3>
+        <form>
+            Name: <input type="text" name="name"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Message:<br>
+            <textarea name="message" rows="4" cols="25"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created: July 2025 | <a href="https://github.com/yourgithub" target="_blank">My GitHub</a></p>
+    </footer>
+
+</body>
+</html>
