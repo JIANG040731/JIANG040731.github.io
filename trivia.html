@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Trivia: Grade Average</title>
+  <title>Trivia - Grade Average</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <script>
+    function calculateAverage() {
+      const s1 = parseFloat(document.getElementById("score1").value) || 0;
+      const s2 = parseFloat(document.getElementById("score2").value) || 0;
+      const s3 = parseFloat(document.getElementById("score3").value) || 0;
+      const avg = ((s1 + s2 + s3) / 3).toFixed(2);
+      document.getElementById("result").innerText = "Your average score is: " + avg;
+    }
+  </script>
 </head>
 <body>
 
 <header>
-  <h1>Trivia: Grade Average Calculator</h1>
+  <h1>Trivia - Grade Average</h1>
 </header>
 
 <nav>
@@ -35,14 +43,20 @@
     <p>Enter your scores for 3 subjects below:</p>
 
     <form id="gradeForm">
-      Subject 1: <input type="number" id="score1" min="0" max="100"><br/><br/>
-      Subject 2: <input type="number" id="score2" min="0" max="100"><br/><br/>
-      Subject 3: <input type="number" id="score3" min="0" max="100"><br/><br/>
+      <label>Subject 1:</label><br/>
+      <input type="number" id="score1" min="0" max="100"><br/><br/>
+
+      <label>Subject 2:</label><br/>
+      <input type="number" id="score2" min="0" max="100"><br/><br/>
+
+      <label>Subject 3:</label><br/>
+      <input type="number" id="score3" min="0" max="100"><br/><br/>
+
       <input type="button" value="Calculate Average" onclick="calculateAverage()">
       <input type="reset" value="Clear">
     </form>
 
-    <p id="result" style="margin-top: 15px;"></p>
+    <p id="result" style="margin-top: 15px; font-weight: bold;"></p>
   </section>
 
   <!-- Right Sidebar -->
