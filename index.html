@@ -3,54 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>My Website - Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <h1>Welcome to My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="portfolio.html">PORTFOLIO</a></li>
-        <li><a href="trivia.html">TRIVIA</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <aside>
-      <h3>Useful Links</h3>
-      <ul>
-        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-        <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
-      </ul>
-    </aside>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">HOME</a> |
+    <a href="portfolio.html">PORTFOLIO</a> |
+    <a href="trivia.html">TRIVIA</a>
+  </nav>
 
-    <section>
-      <h2>About Me</h2>
-      <p>Hello and welcome to my personal website! My name is <strong>JIANG HONGYU</strong>, and I am currently a third-year student majoring in Information Science at Ritsumeikan University. I have a deep interest in web development and enjoy learning how to build interactive and visually engaging websites using HTML, CSS, and JavaScript.</p>
-      
-      <p>Outside of academics, I love reading books, exploring new programming tools, and working on small personal projects. I also enjoy outdoor activities like hiking and photography. This homepage is a part of my coursework, and it showcases what I have learned throughout this semester. Thank you for visiting!</p>
-    </section>
+  <!-- Left Sidebar -->
+  <aside class="left-sidebar">
+    <h3>Useful Links</h3>
+    <ul>
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+    </ul>
+  </aside>
 
-    <aside class="right">
-      <h3>Contact Me</h3>
-      <form>
-        <label for="name">Name:</label><br/>
-        <input type="text" id="name" name="name"/><br/>
-        <label for="email">Email:</label><br/>
-        <input type="email" id="email" name="email"/><br/>
-        <label for="message">Message:</label><br/>
-        <textarea id="message" name="message" rows="4"></textarea><br/>
-        <button type="submit">Submit</button>
-      </form>
-    </aside>
+  <!-- Main Content -->
+  <main class="content">
+    <h2>About Me</h2>
+    <p>Hello! My name is <strong>JIANG HONGYU</strong>, and I’m currently a third-year university student majoring in Information Science at Ritsumeikan University. I’ve always been interested in how websites work and how technology shapes communication, so web development has become one of my favorite fields to explore.</p>
+    
+    <p>In my free time, I enjoy working on side projects, taking part in tech-related student groups, and reading both fiction and technical books. This website was created as part of my coursework for the Information Systems class, and it shows what I’ve learned about HTML, CSS, and JavaScript.</p>
+
+    <img src="profile.jpg" alt="A photo representing me" width="300" style="margin-top:15px; border:1px solid #ccc;" />
   </main>
 
+  <!-- Right Sidebar -->
+  <aside class="right-sidebar">
+    <h3>Contact Me</h3>
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name"><br/><br/>
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email"><br/><br/>
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="4" cols="25"></textarea><br/><br/>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
+    </form>
+  </aside>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 JIANG HONGYU</p>
+    <p>Created: July 2025 | <a href="https://github.com/jiang040731" target="_blank">My GitHub</a></p>
   </footer>
+
 </body>
 </html>
+
