@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Welcome to My Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+<header>
+  <h1>Welcome to My Website</h1>
+</header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">HOME</a> |
-    <a href="portfolio.html">PORTFOLIO</a> |
-    <a href="trivia.html">TRIVIA</a>
-  </nav>
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="portfolio.html">PORTFOLIO</a>
+  <a href="trivia.html">TRIVIA</a>
+</nav>
 
+<main>
   <!-- Left Sidebar -->
   <aside class="left-sidebar">
     <h3>Useful Links</h3>
     <ul>
-      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
       <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
     </ul>
   </aside>
 
   <!-- Main Content -->
-  <main class="content">
-    <h2>About Me</h2>
-    <p>Hello! My name is <strong>JIANG HONGYU</strong>, and I’m currently a third-year university student majoring in Information Science at Ritsumeikan University. I’ve always been interested in how websites work and how technology shapes communication, so web development has become one of my favorite fields to explore.</p>
-    
-    <p>In my free time, I enjoy working on side projects, taking part in tech-related student groups, and reading both fiction and technical books. This website was created as part of my coursework for the Information Systems class, and it shows what I’ve learned about HTML, CSS, and JavaScript.</p>
+  <section class="content">
+    <h2>My Story: A Journey to Sanxingdui</h2>
 
-    <img src="profile.jpg" alt="A photo representing me" width="300" style="margin-top:15px; border:1px solid #ccc;" />
-  </main>
+    <p>Hello! My name is JIANG HONGYU, and I’m currently a third-year university student. During the summer, I had the chance to visit the Sanxingdui Museum in Chengdu, China. It was one of the most unforgettable cultural experiences of my life.</p>
+
+    <p>As I stood in front of the ancient bronze trees and mysterious masks, I felt a deep connection to history. These artifacts, created thousands of years ago, were both majestic and strange—almost alien. I couldn’t believe how sophisticated the craftsmanship was. It made me think about how many stories are buried in time, waiting to be rediscovered.</p>
+
+    <p>Visiting Sanxingdui reminded me that learning doesn’t only happen in classrooms or online—it happens when we explore the world around us. This experience taught me to stay curious, keep asking questions, and appreciate the past. That’s something I try to bring into everything I study.</p>
+
+    <img src="sanxingdui_tree.jpg" alt="Bronze Sacred Tree at Sanxingdui" />
+    <img src="sanxingdui_mask.jpg" alt="Ancient bronze mask" />
+  </section>
 
   <!-- Right Sidebar -->
   <aside class="right-sidebar">
     <h3>Contact Me</h3>
     <form>
-      <label for="name">Name:</label><br/>
-      <input type="text" id="name" name="name"><br/><br/>
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email"><br/><br/>
-      <label for="message">Message:</label><br/>
-      <textarea id="message" name="message" rows="4" cols="25"></textarea><br/><br/>
+      <label>Name:</label>
+      <input type="text" name="name"><br>
+
+      <label>Email:</label>
+      <input type="email" name="email"><br>
+
+      <label>Message:</label><br>
+      <textarea name="message" rows="5"></textarea><br>
+
       <input type="submit" value="Submit">
       <input type="reset" value="Clear">
     </form>
   </aside>
+</main>
 
-  <!-- Footer -->
-  <footer>
-    <p>Created: July 2025 | <a href="https://github.com/jiang040731" target="_blank">My GitHub</a></p>
-  </footer>
+<footer>
+  <p>Created in July 2025 | Visit my <a href="https://github.com/JIANG040731" target="_blank">GitHub</a></p>
+</footer>
 
 </body>
 </html>
