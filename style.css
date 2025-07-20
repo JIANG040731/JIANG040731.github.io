@@ -1,11 +1,11 @@
-/* Reset */
+/* Reset default spacing */
 body, h1, h2, h3, p, ul, li, input, textarea {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+/* Base font and layout */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -35,10 +35,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Layout structure */
+/* Main layout: 左-中-右 三列横向排版 */
 main {
   display: flex;
+  flex-direction: row;
   padding: 20px;
+  gap: 20px;
 }
 
 /* Left Sidebar */
@@ -61,7 +63,7 @@ main {
   text-decoration: underline;
 }
 
-/* Content Area */
+/* Main Content */
 .content {
   width: 60%;
   background-color: #ffffff;
@@ -72,6 +74,20 @@ main {
   height: auto;
   margin-top: 10px;
   border: 1px solid #ccc;
+}
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.content th {
+  background-color: #336699;
+  color: white;
+  padding: 10px;
+}
+.content td {
+  padding: 10px;
+  border: 1px solid #aaa;
 }
 
 /* Right Sidebar */
@@ -94,6 +110,12 @@ main {
   padding: 6px;
 }
 
+/* Result text in trivia */
+#result {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
 /* Footer */
 footer {
   background-color: #003366;
@@ -101,30 +123,4 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 20px;
-}
-
-/* Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-table th {
-  background-color: #336699;
-  color: white;
-  padding: 10px;
-}
-table td {
-  padding: 10px;
-  border: 1px solid #aaa;
-}
-
-/* Form on trivia page */
-#gradeForm input {
-  padding: 5px;
-  width: 60%;
-}
-#result {
-  font-weight: bold;
-  margin-top: 10px;
 }
