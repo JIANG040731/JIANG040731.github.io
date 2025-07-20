@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>My Portfolio</h1>
-  </header>
+<header>
+  <h1>My Portfolio</h1>
+</header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">HOME</a> |
-    <a href="portfolio.html">PORTFOLIO</a> |
-    <a href="trivia.html">TRIVIA</a>
-  </nav>
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="portfolio.html">PORTFOLIO</a>
+  <a href="trivia.html">TRIVIA</a>
+</nav>
 
+<main>
   <!-- Left Sidebar -->
   <aside class="left-sidebar">
     <h3>Useful Links</h3>
     <ul>
       <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
       <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
     </ul>
   </aside>
 
   <!-- Main Content -->
-  <main class="content">
+  <section class="content">
     <h2>Projects and Experiences</h2>
     <table border="1">
       <thead>
@@ -75,27 +73,30 @@
         </tr>
       </tbody>
     </table>
-  </main>
+  </section>
 
   <!-- Right Sidebar -->
   <aside class="right-sidebar">
     <h3>Contact Me</h3>
     <form>
-      <label for="name">Name:</label><br/>
-      <input type="text" id="name" name="name"><br/><br/>
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email"><br/><br/>
-      <label for="message">Message:</label><br/>
-      <textarea id="message" name="message" rows="4" cols="25"></textarea><br/><br/>
+      <label>Name:</label>
+      <input type="text" name="name"><br>
+
+      <label>Email:</label>
+      <input type="email" name="email"><br>
+
+      <label>Message:</label><br>
+      <textarea name="message" rows="5"></textarea><br>
+
       <input type="submit" value="Submit">
       <input type="reset" value="Clear">
     </form>
   </aside>
+</main>
 
-  <!-- Footer -->
-  <footer>
-    <p>Created: July 2025 | <a href="https://github.com/jiang040731" target="_blank">My GitHub</a></p>
-  </footer>
+<footer>
+  <p>Created in July 2025 | Visit my <a href="https://github.com/JIANG040731" target="_blank">GitHub</a></p>
+</footer>
 
 </body>
 </html>
