@@ -1,31 +1,26 @@
-function calculateBMI() {
-    let h = parseFloat(document.getElementById("height").value);
-    let w = parseFloat(document.getElementById("weight").value);
+function calculateAverage() {
+  const s1 = parseFloat(document.getElementById("score1").value);
+  const s2 = parseFloat(document.getElementById("score2").value);
+  const s3 = parseFloat(document.getElementById("score3").value);
 
-    if (isNaN(h) || h <= 0) {
-        alert("Please enter a valid height in cm.");
-        return;
-    }
+  if (isNaN(s1) || isNaN(s2) || isNaN(s3)) {
+    alert("Please enter all three scores.");
+    return;
+  }
 
-    if (isNaN(w) || w <= 0) {
-        alert("Please enter a valid weight in kg.");
-        return;
-    }
+  const avg = (s1 + s2 + s3) / 3;
+  let evaluation = "";
 
-    h = h / 100; // convert cm to meters
-    const bmi = w / (h * h);
-    let category = "";
+  if (avg >= 90) {
+    evaluation = "Excellent";
+  } else if (avg >= 75) {
+    evaluation = "Good";
+  } else if (avg >= 60) {
+    evaluation = "Average";
+  } else {
+    evaluation = "Poor";
+  }
 
-    if (bmi < 18.5) {
-        category = "Underweight";
-    } else if (bmi < 24.9) {
-        category = "Normal";
-    } else if (bmi < 29.9) {
-        category = "Overweight";
-    } else {
-        category = "Obese";
-    }
-
-    document.getElementById("result").innerHTML = 
-        "Your BMI is <strong>" + bmi.toFixed(2) + "</strong> (" + category + ")";
+  document.getElementById("result").innerHTML =
+    "Your average score is <strong>" + avg.toFixed(2) + "</strong> (" + evaluation + ")";
 }
