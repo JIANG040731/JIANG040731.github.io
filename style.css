@@ -124,3 +124,20 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
+.content {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.content table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.content th,
+.content td {
+  word-wrap: break-word;
+  padding: 8px;
+  text-align: left;
+}
